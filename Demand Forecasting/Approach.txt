@@ -1,0 +1,34 @@
+The main objective of the problem is to develop the machine learning approach to forecast the demand of car rentals on an hourly basis.
+
+----------------------------------------------------------------------------------
+
+Author : Dileep Kumar
+Language : Python
+Libraries : Pandas, Numpy, Scikit-Learn
+
+----------------------------------------------------------------------------------
+
+
+
+
+The given train dataset contains a total of 18,247 rows and 3 columns.
+
+I.  Data-preprocessing
+
+1. Checked the existence of NULL values in the columns of the train dataset and also the count of the existed NULL values in each column of the train dataset.
+
+2. Handled missing values by imputing 'demand' column with Mean.
+
+II. Feature Engineering
+
+1. Added features like 'date_year', 'date_month', 'date_week', 'date_day'.
+
+2. Dropped columns'date'
+
+III. Modelling
+
+After data-preprocessing and adding new features, I implemented Random Forest Regressor as my base model. This gave me 	36.374 on leaderboard.
+
+I have implemented the other approaches like Support Vector Regressor, Decision Trees. However, the Random Forest Regressor has outperformed on Leader Board.
+
+
